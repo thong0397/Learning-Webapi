@@ -6,7 +6,7 @@ namespace MyWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class HangHoaController : ControllerBase
+    public class HangHoa : ControllerBase
     {
         public static List<HangHoa> hangHoas = new List<HangHoa>();
         [HttpGet]
