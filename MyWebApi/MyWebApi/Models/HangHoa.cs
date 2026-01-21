@@ -6,7 +6,7 @@
         public string DonGia { get; set; }
     }
 
-    public class HangHoa : HangHoaVM
+    public class HangHoa1 : HangHoaVM
     {
         public Guid MaHangHoa { get; set; }
     }

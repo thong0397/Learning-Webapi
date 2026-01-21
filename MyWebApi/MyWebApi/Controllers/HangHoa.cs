@@ -8,7 +8,7 @@ namespace MyWebApi.Controllers
     [ApiController]
     public class HangHoa : ControllerBase
     {
-        public static List<HangHoa> hangHoas = new List<HangHoa>();
+        public static List<HangHoa1> hangHoas = new List<HangHoa1>();
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -36,7 +36,7 @@ namespace MyWebApi.Controllers
         [HttpPost]
         public IActionResult Create(HangHoaVM hangHoaVM)
         {
-            var hangHoa = new HangHoa
+            var hangHoa = new HangHoa1
             {
                 MaHangHoa = Guid.NewGuid(),
                 TenHangHoa = hangHoaVM.TenHangHoa,
@@ -50,8 +50,9 @@ namespace MyWebApi.Controllers
                 Data = hangHoas
             });
         }
+
         [HttpPut("{id}")]
-        public IActionResult Edit(string id, HangHoa hangHoaEdit)
+        public IActionResult Edit(string id, HangHoa1 hangHoaEdit)
         {
             try
             {

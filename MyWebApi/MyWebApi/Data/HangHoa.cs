@@ -17,5 +17,10 @@ namespace MyWebApi.Data
 
         public double DonGia { get; set; }
         public byte GiamGia { get; set; }
+
+        public Guid? MaLoai { get; set; }
+
+        [ForeignKey("MaLoai")]
+        public Loai Loai { get; set; }
     }
 }
