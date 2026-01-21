@@ -13,6 +13,7 @@
   <ItemGroup>
     <Folder Include="Helpers\" />
     <Folder Include="Data\" />
+    <Folder Include="addnew\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
